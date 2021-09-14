@@ -1,5 +1,28 @@
 # Pipette
 
+<div>
+  <!-- Crates version -->
+  <a href="https://crates.io/crates/pipette">
+    <img src="https://img.shields.io/crates/v/pipette.svg?style=flat-square"
+    alt="Crates.io version" />
+  </a>
+  <!-- Downloads -->
+  <a href="https://crates.io/crates/pipette">
+    <img src="https://img.shields.io/crates/d/pipette.svg?style=flat-square"
+      alt="Download" />
+  </a>
+  <!-- docs.rs docs -->
+  <a href="https://docs.rs/pipette">
+    <img src="https://img.shields.io/badge/docs-latest-blue.svg?style=flat-square"
+      alt="docs.rs docs" />
+  </a>
+  <!-- CI -->
+  <a href="https://github.com/jkelleyrtp/pipette/actions">
+    <img src="https://github.com/jkelleyrtp/pipette/workflows/CI/badge.svg"
+      alt="CI status" />
+  </a>
+</div>
+
 A small crate for using pipes in Rust.
 
 ```rust
