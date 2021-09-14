@@ -21,9 +21,11 @@
 A small crate for using pipes in Rust.
 
 ```rust
+use pipette::{Pipeline, pipe};
+
 let input = 1;
 
-let output = pipette::pipe((
+let output = pipe((
     input
     |a| a * 2,
     |a| a * 3,
@@ -42,7 +44,25 @@ Pipette is unique:
 - Integrates well with IDE
 - Does not require macros or custom traits
 
+## How to use Pipette
 
+Pipette uses trait-based polymorphism (the `Pipeline` trait) to make it easy to assemble closure-based pipelines in Rust. A single pipeline may consist of up to 12 closures and does not require static typing (ie pipe3, pipe4, pipe5 etc.). Instead, the Pipeline trait will allow any tuple, calling `compute` any any size of pipeline.
+
+```rust
+fn add_one(a: i32) -> i32 {
+    a + 1
+}
+
+let r0 = pipe((0, add_one, add_one));
+let r1 = pipe((0, add_one, add_one, add_one));
+let r2 = pipe((0, add_one, add_one, add_one, add_one));
+let r3 = pipe((0, add_one, add_one, add_one, add_one, add_one));
+
+// lazy pipeline
+let add_three = (0, add_one, add_one, add_one);
+
+add_three.compute();
+```
 ## License
 
 This project is licensed under the [MIT license].
