@@ -4,5 +4,7 @@ version = "0.1.0"
 edition = "2018"
 authors = ["Jonathan Kelley"]
 license = "MIT"
+description = "Polymorphic function pipelines without traits or macros"
+tags = ["pipeline", "pipe", "pipes", "operator", "function", "polymorphism"]
 
 [dependencies]
