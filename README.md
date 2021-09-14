@@ -16,11 +16,6 @@
     <img src="https://img.shields.io/badge/docs-latest-blue.svg?style=flat-square"
       alt="docs.rs docs" />
   </a>
-  <!-- CI -->
-  <a href="https://github.com/jkelleyrtp/pipette/actions">
-    <img src="https://github.com/jkelleyrtp/pipette/workflows/CI/badge.svg"
-      alt="CI status" />
-  </a>
 </div>
 
 A small crate for using pipes in Rust.
