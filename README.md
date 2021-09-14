@@ -23,3 +23,16 @@ Pipette is unique:
 - Supports polymorphic pipeline sizes
 - Integrates well with IDE
 - Does not require macros or custom traits
+
+
+## License
+
+This project is licensed under the [MIT license].
+
+[MIT license]: https://github.com/tokio-rs/tokio/blob/master/LICENSE
+
+### Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in Pipette by you, shall be licensed as MIT, without any additional
+terms or conditions.
